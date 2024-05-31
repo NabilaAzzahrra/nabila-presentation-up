@@ -19,7 +19,14 @@ export default function Halaman() {
       className={`${roboto.className} bg-white text-black px-96 flex h-screen items-center justify-center`}
     >
       <div className="">
-        SELESAI
+        <div className="">SELESAI</div>
+        <div className="">
+          <Link href={`/tahap_pengumpulan_data`}>
+            <div className="h-10 w-10 bg-sky-400 rounded-full flex items-center justify-center">
+              <div className="triangle-left"></div>
+            </div>
+          </Link>
+        </div>
       </div>
     </main>
   );
