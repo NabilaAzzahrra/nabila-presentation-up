@@ -31,11 +31,11 @@ export default function Halaman() {
     <main
       className={`${roboto.className} bg-white text-black px-96 flex items-center justify-center`}
     >
-      {/* {loading && (
+      {loading && (
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-10 bg-black bg-opacity-80">
           <LottieAnimasi />
         </div>
-      )} */}
+      )}
       <div className="">
         <div className="pb-3 font-extrabold text-xl flex items-center justify-center gap-5">
           <div className="font-extrabold text-3xl flex items-end justify-center">
