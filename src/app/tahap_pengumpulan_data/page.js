@@ -1,7 +1,10 @@
 "use client";
+import { useState, useEffect } from "react";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import Link from "next/link";
-import Image from "next/image"; // Sesuaikan path dengan struktur file Anda
+import Image from "next/image";
+import MetodeAnimation from "../../../public/MetodeAnimation";
+import LottieAnimasi from "/public/LottieAnimation";
 
 const roboto = Roboto({
   weight: "400",
@@ -14,24 +17,49 @@ export const roboto_mono = Roboto_Mono({
 });
 
 export default function Halaman() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Adjust the delay as needed
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <main
-      className={`${roboto.className} bg-white text-black px-96 flex h-screen items-center justify-center`}
+      className={`${roboto.className} bg-black text-white px-96 flex h-screen items-center justify-center`}
     >
+      {loading && (
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-10 bg-black bg-opacity-80">
+          <LottieAnimasi />
+        </div>
+      )}
       <div className="">
-        <div className="pb-10">TAHAPAN PERUMUSAN MASALAH</div>
-        <div className="">
-          {/* <LottieAnimasi /> */}
-
-          <Image src="/img/tahap_perumusan_masalah.png" alt="alt" width={600} height={600} />
+        <div className="pb-3 font-extrabold text-xl flex items-center justify-center gap-5">
+          <div className="font-extrabold text-3xl flex items-end justify-center">
+            TAHAP PENGUMPULAN DATA
+          </div>
+          <div className="font-extrabold text-xl flex items-center justify-center">
+            <MetodeAnimation />
+          </div>
+        </div>
+        <div className="mt-5">
+          <Image
+            src="/img/tahap_perumusan_masalah.png"
+            alt="alt"
+            width={600}
+            height={600}
+          />
         </div>
         <div className="flex gap-2 mt-7">
-        <Link href={`/objek_waktu_penelitian`}>
+          <Link href={`/objek_waktu_penelitian`}>
             <div className="h-10 w-10 bg-sky-400 rounded-full flex items-center justify-center">
               <div className="triangle-left"></div>
             </div>
           </Link>
-          <Link href={`/selesai`}>
+          <Link href={`/hasil_penelitian_pembahasan`}>
             <div className="h-10 w-10 bg-sky-400 rounded-full flex items-center justify-center">
               <div className="triangle-right"></div>
             </div>
