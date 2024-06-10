@@ -71,7 +71,7 @@ export default function Halaman() {
 
         <div className="flex gap-3 mt-8">
           <div className="bg-amber-200 text-black font-bold text-xl p-3 w-10 h-10 rounded-full flex items-center justify-center">
-            1
+            3
           </div>
           <div className="p-6 text-xl border border-2 border-white hover:bg-amber-200 hover:text-black hover:border-black rounded-full">
             Bagaimana solusi yang harus dilakukan guna menangani hambatan yang

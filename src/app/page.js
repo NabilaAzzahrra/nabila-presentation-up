@@ -46,7 +46,7 @@ export default function Page() {
               (STUDI KASUS POLITEKNIK LP3I KAMPUS TASIKMALAYA)
             </span>
           </p>
-          <p className="font-bold text-sm md:text-xl">USULAN PROPOSAL / 03 Juni 2024</p>
+          <p className="font-bold text-sm md:text-xl">Sidang Skripsi / 10 Juni 2024</p>
           <p className="mt-3 font-bold tracking-widest text-md md:text-2xl text-amber-300">
             NABILA AZZAHRA
           </p>

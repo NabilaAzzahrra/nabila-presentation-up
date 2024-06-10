@@ -51,7 +51,7 @@ export default function Halaman() {
               Simpulan
             </div>
             <div className="mb-3 text-xl text-center text-wrap">
-            Aplikasi Web Sistem Informasi Relasi Perusahaan (SiRP) menggunakan codeigniter untuk menangani proses pengolahan data perusahaan. Aplikasi dibangun menggunakan database MySQL. Aplikasi sangat efisien untuk pengembangan sebagai cross platform. Kemudian terdapat beberapa fitur yang masih belum maksimal dan masih dapat dikembangkan lebih jauh.
+            Sistem sebelumnya masih menggunakan file terpisah dan belum terintegrasi. Hambatan yang ada meliputi pengelolaan data yang tidak rapi dan informasi lambat. Solusi yang diusulkan adalah pembuatan aplikasi pengolahan data relasi perusahaan untuk mengatasi hambatan-hambatan tersebut.
             </div>
           </div>
           <div className="">
